@@ -1,0 +1,15 @@
+D:\Visual Stdio\C#入门实践\实践\bin\Debug\net10.0\实践.exe
+D:\Visual Stdio\C#入门实践\实践\bin\Debug\net10.0\实践.deps.json
+D:\Visual Stdio\C#入门实践\实践\bin\Debug\net10.0\实践.runtimeconfig.json
+D:\Visual Stdio\C#入门实践\实践\bin\Debug\net10.0\实践.dll
+D:\Visual Stdio\C#入门实践\实践\bin\Debug\net10.0\实践.pdb
+D:\Visual Stdio\C#入门实践\实践\obj\Debug\net10.0\实践.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Stdio\C#入门实践\实践\obj\Debug\net10.0\实践.AssemblyInfoInputs.cache
+D:\Visual Stdio\C#入门实践\实践\obj\Debug\net10.0\实践.AssemblyInfo.cs
+D:\Visual Stdio\C#入门实践\实践\obj\Debug\net10.0\实践.csproj.CoreCompileInputs.cache
+D:\Visual Stdio\C#入门实践\实践\obj\Debug\net10.0\实践.dll
+D:\Visual Stdio\C#入门实践\实践\obj\Debug\net10.0\refint\实践.dll
+D:\Visual Stdio\C#入门实践\实践\obj\Debug\net10.0\实践.pdb
+D:\Visual Stdio\C#入门实践\实践\obj\Debug\net10.0\实践.genruntimeconfig.cache
+D:\Visual Stdio\C#入门实践\实践\obj\Debug\net10.0\ref\实践.dll
+D:\Visual Stdio\C#入门实践\实践\obj\Debug\net10.0\实践.csproj.Up2Date
