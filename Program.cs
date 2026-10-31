@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Hello, World!");
+﻿using System.Runtime.CompilerServices;
+
+Console.WriteLine("Hello, World!");
 //知识点一 折叠代码
 //主要作用是让我们编程时逻辑更加清晰
 //他是有#region #endregion配对出现的
@@ -185,13 +187,125 @@ Console.WriteLine(do5);
 //char不能隐式存储其他类型的变量
 //char隐式转换成的数字其实是一个ASCII码值
 //string类型无法和其他类型进行隐式转换
+//总结 隐式转换的规则
+//高精度（大范围）装低精度（小范围）
+//double--float--整数--char
+//decimal--整数--char
+//string和bool不参与隐式转换
+
 #endregion 
+#region 知识点十四 显示转换
+//括号强转 一般情况下 将高精度类型强制转换为低精度
+//语法 变量类型 变量名=（变量类型）变量
+//相同大类的整型
+//有符号的整型
+int i4 = 1;
+sbyte sb3 = 1;
+short s4 = 1;
+long l4 = 1;
+s4 = (short)i4;
+Console.WriteLine(s4);
+//括号强转 可能会出现范围问题造成的异常
+//浮点数强转成整型时会直接抛弃小数点后面的小数
+//char和数值类型是可以相互转化的
+i4 = (int)1.64f;
+Console.WriteLine(i4);
+//bool和string不能通过括号去强转
+//Parse法  把字符串类型转换为对应的类型
+//语法 变量类型。Parse("字符串")
+//注意 字符串必须能够转成对应类型否则报错
+//有符号
+//我们填写字符串 必须是要能够转成对应类型的字符 如果不符合规则 会报错
+//值的范围必须是能够被变量存储的值 否则报错
+sbyte sb5 = sbyte.Parse("123");
+Console.WriteLine(sb5);
+//这两句话的意思是一样的
+Console.WriteLine(sbyte.Parse("123"));
+//无符号
+Console.WriteLine(byte.Parse("123"));
+ Console.WriteLine(ushort .Parse("123"));
+Console.WriteLine(ulong .Parse("123"));
+Console.WriteLine(uint.Parse("123"));
+//浮点数
+float f6=float.Parse ("12.9");
+double do6 = double.Parse("123.999999");
+//特殊类型
+bool bo5 = bool.Parse("true");
+Console .WriteLine (bo5);
+char c5 = char.Parse("A");
+//Convert法
+//作用 更准确的将各个类型的变量相互转化
+//语法 Convert.To目标类型（变量或常量）
+//注意 变量的填写必须正确 否则出错
+//转字符串 如果是把字符串转成对应类型 那字符串一定要合法合规
+int a7 = Convert.ToInt32("123");
+Console.WriteLine(a7);
+a7= Convert.ToInt32(1.65437f);//会四舍五入
+//能够把bool类型也转换成数值类型
+a7 = Convert.ToInt32(true );
+Console .WriteLine (a7);
+a7= Convert.ToInt32(false );
+Console.WriteLine(a7);
+//每个类型都存在对应的方法
+sbyte sb6 = Convert.ToSByte("123");
+short s7 = Convert.ToInt16("123");
+int i5 = Convert.ToInt32("123");
+long l6 = Convert.ToInt64("123");
+//无符号的同样如此
+float f7 = Convert.ToSingle("12.3");
+double de5 = Convert.ToDouble("12.3");
+decimal de6 = Convert.ToDecimal("12.3");
+//特殊类型
+bool bo8 = Convert.ToBoolean("ture");
+char c8 = Convert.ToChar("A");
+string s8 = Convert.ToString("123");
+//其他类型转string
+//作用 拼接打印
+//语法 变量.toString();
+string str6 = 1.ToString();
+str6 = true.ToString();
+str6 = 'A'.ToString();
+str6 = 1.2f.ToString();
+//当我们进行字符串拼接时 就会自动调用tostring
+#endregion 
+#region 知识点十五 异常捕获
+//作用
+//将玩家输入的内容存储在string类型的变量中
+string str7 = Console.ReadLine();
+//可以避免当代码报错时 出现程序卡死的情况
+//基本语法
+//必备部分
+try{
+                //希望进行异常捕获的代码块
+                //放到try中
+                //如果try中的代码报错了  不会让程序卡死
+}
+catch{
+    //如果出错了  会执行catch中的代码来捕获异常
+}
+//可选部分
+finally{
+    //最后执行的代码  不管有没有出错 都会执行其中的代码
+}
+//注意 异常捕获代码基本结构中不需要加；在里面写代码时才需要加；
+#endregion
+#region 知识点十六
+//赋值符号
+//=
+//先看右侧 再看左侧 把右侧的值赋值给左侧
+//算数运算符号的优先级
+//乘除取余高于加减
+//有多层括号时从里往外算
+//算数运算符的自增减
+//a++先用再加
+//++a先加再用
 
 
 
 
 
 
+#endregion 
 
 
 
