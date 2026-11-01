@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp1
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace ConsoleApp1
 {
     internal class Program
     {
@@ -57,17 +59,109 @@
 
             char c = (char)i2;
             Console.WriteLine(c);
+
+            //bool和string 是不能够用括号强转换的
+
+            bool bo = true;
+
             #endregion
 
             #region 知识点二 Parse法
+            //作用 把字符串类型转换为对应类型
+            //语法：变量类型、Parse（“字符串”）
+            //注意：字符串必须能够转换成对应类型 否则报错
+
+            //有符号
+            string str2 = "123";
+            int i4 = int.Parse("123");
+            Console.WriteLine("i4");
+            //我们填写的字符串 必须是能够转换成对应类型的字符 如果不符合规则 会报错
+            //值的范围 必须是能够被变量储存的值 否则报错
+            short s3 = short.Parse("1");
+            Console.WriteLine(s3);
+
+            sbyte sb3 = (sbyte.Parse("1"));
+            Console.WriteLine(sb);
+            //他们的意思是相同的
+            Console.WriteLine(sbyte.Parse("1"));
+
+            //无符号 
+            Console.WriteLine(byte.Parse("1"));
+            Console.WriteLine(ushort.Parse("1"));
+            Console.WriteLine(ulong.Parse("1"));
+            Console.WriteLine(uint.Parse("1"));
+
+            //浮点数
+            float f3 = float.Parse("1.2323");
+            double d3 = double.Parse("1.2323");
+
+            //特殊类型
+            bool b5 = bool.Parse("true");
+            Console.WriteLine(b5);
+
+            char c2 = char.Parse("A");
+            Console.WriteLine(c2);
 
             #endregion
 
             #region 知识点三 Convert法
+            // 作用更准确的将 各个类型之间进行相互转换
+            //语法：Convert.To目标类型（变量或常量）
+            //注意：填写的变量或常量必须正确 否则出错
+            //转字符串 如果是把字符串转对应类型 那字符串一定要合法合规
+            int a= Convert. ToInt32("12");
+            Console.WriteLine(a);
+            // 精度比括号强转好一点 会四舍五入
+            a = Convert.ToInt32(1.45845f);
+            Console.WriteLine(a);
 
+            //把bool类型也可以转换成数值类型 true对应1 false对应0
+            a = Convert.ToInt32(true);
+            Console.WriteLine(a);
+            a = Convert.ToInt32(false);
+            Console.WriteLine(a);
+
+            a = Convert.ToInt32('A');
+            Console.WriteLine(a);
+
+            //每一个类型都存在对应的 Convert中的方法
+            sbyte sb5 = Convert.ToSByte("1");
+            short s5 = Convert.ToInt16("1");
+            int i5 = Convert.ToInt32("1");
+            long l5 = Convert.ToInt64("1");
+
+            byte b6 = Convert.ToByte("1");
+            ushort u55 = Convert.ToUInt16("1");
+            uint ui5 = Convert.ToUInt32("1");
+            ulong ul5 = Convert.ToUInt64("1");
+
+            float f5 = Convert.ToSingle("13.2");
+            double d5 = Convert.ToDouble("13.2");
+            decimal de5 = Convert.ToDecimal("13.2");
+
+            bool b05 = Convert.ToBoolean("true");
+            char C5 = Convert.ToChar("A");
+
+            string str5 = Convert.ToString(123123);
             #endregion
 
             #region 知识点四 其他类型转string
+            //作用：拼接打印
+            //语法：变量.toString()
+
+            string str6 = 1.ToString();
+            str6 = true.ToString();
+            str6 = 'A'.ToString();
+            str6 = 1.2f.ToString();
+            int aa = 1;
+            str6 = aa.ToString();
+            bool bo6 = true;
+            str6 = bo6.ToString();
+            // 当我们进行字符串拼接时就自动会调用 tostring 转成string
+            Console.WriteLine("123123" + 1 + true);
+
+            str6 = "123123" + 1 + true + 1.23;
+
 
             #endregion
         }

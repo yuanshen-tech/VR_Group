@@ -1,4 +1,6 @@
 <Solution>
+  <Project Path="1.1/1.1.csproj" Id="a8352d66-96b8-4bea-9a42-78fd1e8eda74" />
   <Project Path="999/999.csproj" />
   <Project Path="ConsoleApp1/ConsoleApp1.csproj" Id="0baa8533-39d4-4b78-a1a4-eeb54dec57c1" />
+  <Project Path="lian/lian.csproj" Id="38518b63-0987-4d37-8f09-169f3f9aaa9e" />
 </Solution>
