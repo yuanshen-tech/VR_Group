@@ -1,4 +1,12 @@
 <Solution>
-  <Project Path="GenshinImpact.Team/GenshinImpact.Team.csproj" Id="badb0000-eb33-4c41-8f9a-dfc4131ea214" />
-  <Project Path="Random/Test.1107.csproj" Id="b2bad8d3-99a9-476b-ab08-f4d64d1469af" />
+  <Folder Name="/Demo/">
+    <Project Path="DataType.Demo/DataType.Demo.csproj" Id="b4f0d194-6927-420f-9d19-426c6f69368c" />
+  </Folder>
+  <Folder Name="/Practice/">
+    <Project Path="BookBorrowing/BookBorrowing.csproj" Id="d622aec5-db20-4e89-8713-875736531fc9" />
+  </Folder>
+  <Folder Name="/Project/">
+    <Project Path="GenshinImpact.Team/GenshinImpact.Team.csproj" Id="badb0000-eb33-4c41-8f9a-dfc4131ea214" />
+    <Project Path="Random/Test.1107.csproj" Id="b2bad8d3-99a9-476b-ab08-f4d64d1469af" />
+  </Folder>
 </Solution>
