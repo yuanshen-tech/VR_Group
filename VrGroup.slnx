@@ -1,3 +1,4 @@
 <Solution>
-  <Project Path="Random/Test.1107.csproj" />
+  <Project Path="GenshinImpact.Team/GenshinImpact.Team.csproj" Id="badb0000-eb33-4c41-8f9a-dfc4131ea214" />
+  <Project Path="Random/Test.1107.csproj" Id="b2bad8d3-99a9-476b-ab08-f4d64d1469af" />
 </Solution>
