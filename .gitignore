@@ -1,0 +1,49 @@
+################################################################################
+# Visual Studio / .gitignore
+################################################################################
+
+# Visual Studio cache
+.vs/
+**/.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results (generic - covers all projects)
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# NuGet
+packages/
+*.nupkg
+
+# ASP.NET runtime
+App_Data/
+
+# Node
+node_modules/
+
+# Frontend build
+dist/
+.angular/
+
+# Temp
+*.tmp
+*.bak
+*.swp
+*~
+
+# === 项目特定 ===
+/source/pure_坏的/
+/source/二期终结版-API.zip
+/source/二期终结版-WEB.zip
+/doc/
+source/pure/src/assets/tmp/templetes/科研项目（半）年度总结工作模版.doc
