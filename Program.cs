@@ -3,148 +3,88 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq.Expressions;
 
 
-namespace array1
+namespace lesson4;
+
+internal class Program
 {
-    internal class Program
+    private static void Main(string[] args)
     {
-        private static void Main(string[] args)
+        #region 函数在哪
+        //只能写在class语句块内或者struck语句块内
+        #endregion
+        #region 基本语法
+        // 1           2      3
+        //static   返回类型 函数名 (参数类型 参数名1, 参数类型 参数名2...)
+        //{函数代码逻辑;
+        //  return 返回值;  
+        //}
+        //static 在没有学习类和结构体之前是必须写的
+
+        //void 没有返回值
+        //返回类型可以写任意变量类型
+
+        //命名 帕斯卡命名法  MyName
+
+        //参数不是必须的 参数名 驼峰命名法 myName
+
+        //当返回类型不是void 必须return返回内容 (void也可以选择性使用)
+        #endregion
+        #region 实际运用
+        //无参数无返回值
+        static void SayHellow()
         {
-            #region 数组基本概念
-            //数组是存储一组相同类型数据的集合
-            //数组分为一维 多维 交错数组
-            //一般情况 一维数组被简称为数组
-            #endregion
-
-            #region 数组的申明
-            //变量类型[] 数据名; //但是没有确定房间数
-            //变量类型可以是学过的或者没学过的
-            int[] arr1;
-            //变量类型[] 数组名 = new 变量类型[数组的长度];
-            int[] arr2 = new int[5];//初始值每个位置都是0
-            //变量类型[] 数组名 = new 变量类型[数组的长度]{内容1,内容2,...}//必须要填够
-            int[] arr3 = new int[5] { 1, 2, 4, 5, 7 };
-            //变量类型[] 数组名 = new 变量类型[] {}
-            //变量类型[] 数组名 = {};
-            #endregion
-
-            #region 数组的使用
-            int[] array = { 1, 2, 3, 4, 5 };
-            //1.数组的长度
-            Console.WriteLine(array.Length);
-            //2.数组的下标和索引都是从零开始
-            //数组和下标可以获得某个元素的值
-            //一定不能越界！！！
-            Console.WriteLine(array[0]);
-            //3.修改数组中的元素
-            array[2] = 99;
-            Console.WriteLine(array[2]);
-            //4.遍历数组
-            int sum = 0;
-            for (int i = 0; i < array.Length; i++)
-            {
-                Console.WriteLine(array[i]);
-                sum += array[i];
-            }
-            Console.WriteLine(sum);
-
-            //5.增加数组的元素
-            //数组初始化以后 不能直接添加元素 所有可以搬家 新建一个数组
-            int[] array2 = new int[6];
-            for (int i = 0; i < array.Length; i++)
-            {
-                array2[i] = array[i];
-            }
-            array = array2;
-            array[5] = 78;
-            Console.WriteLine("*************************************");
-            for (int i = 0; i < array.Length; i++)
-            {
-                Console.WriteLine(array[i]);
-                sum += array[i];
-            }
-            Console.WriteLine(sum);
-
-            //6.删除数组的元素
-            //同上
-
-            //7.直接查找数组中的元素
-            //查找哪一个索引对应的是我们需要的元素
-            //只能遍历
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (array[i] == 99) Console.WriteLine(i);
-            }
-            #endregion
-
-            #region 二维数组
-            Console.WriteLine("***********************************");
-            //申明
-            //变量类型[,] 二维数组名 = new 变量行[行,列]；
-            int[,] array1 = new int[3, 3];
-            int[,] arra2 = new int[3, 3] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-            int[,] array3 = new int[,] { { 1, 2, 3 }, { 4, 5, 6 } };
-            //1.二维数组的长度
-            //获得行和列分别是多长
-            //行
-            Console.WriteLine(array3.GetLength(0));
-            //列
-            Console.WriteLine(array3.GetLength(1));
-            //2.获取二维数组中的元素
-            //!!!第一个索引是0 最后一个是长度-1
-            Console.WriteLine(array3[0, 1]);
-            //3.修改二维数组元素 得到再赋值
-            array3[0, 1] = 99;
-            //4.遍历二维数组中的元素 两层循环嵌套
-            for (int i = 0; i < array3.GetLength(0); i++)
-            {
-                for (int j = 0; j < array3.GetLength(1); j++)
-                {
-                    Console.WriteLine(array3[i, j]);
+            Console.WriteLine("你好世界");
                 }
-            }
-            //5.增加数组元素
-            Console.WriteLine("**********************************");
-            int[,] array4 = new int[3, 3];
-            for (int i = 0; i < array3.GetLength(0); i++)
-            {
-                for (int j = 0; j < array3.GetLength(1); j++)
-                {
-                    array4[i, j] = array3[i, j];
-                }
-            }
-            array3 = array4;
-            for (int i = 0; i < array3.GetLength(0); i++)
-            {
-                for (int j = 0; j < array3.GetLength(1); j++)
-                {
-                    Console.WriteLine(array3[i, j]);
-                }
-            }
-            #endregion
-           
-            #region 交错数组
-            Console.WriteLine("************************************");
-            //申明
-            //每一行列都是可以不一样的
-            int[][] arr4;
-            int[][] arr5 = new int[3][];
-            int[][] arr6 = new int[3][] { new int[] { 1, 2, 3 }, new int[] { 1, 2 }, new int[] { 1 } };
-            //数组的应用
-            int[][] array7 = {new int[] { 1, 2, 3 },new int[] { 4,5} };
-            //数组的长度
-            Console.WriteLine(array7.GetLength(0));
-            Console.WriteLine(array7[1].Length);
-            //遍历
-            for (int i = 0;i < array7.GetLength(0); i++)
-            {
-                for(int j = 0;j < array7[i].Length;j++)
-                {
-                    Console.WriteLine((int)array7[i][j]);
-                }
-            }
-            #endregion
-
-
+        //有参无返回值
+        static void SayYourName(string name)
+        {
+            Console.WriteLine("你的名字是：{0}", name);
         }
+        //无参有返回值
+        //有返回值一般都要直接用
+        static string WhatYourName()
+         {
+            return "tanglaoshi";
+        }
+        //有参有返回值  
+        static int sum(int a, int b)
+        { 
+          //int c = a + b;
+            return a + b;
+        }
+        //有参有多返回值
+        //用数组作为返回值必须知道数组规则
+        static float[] Calc(float a, float b)
+        {
+            float sum = a + b;
+            float ave = sum / 2.0f;
+               float[] arr = { sum,ave};
+               return arr;
+            //return new int[] {sum, ave };
+        }
+        #endregion
+        #region 关于return
+        static void Speak(string str)
+        {
+            if (str == "脏话")
+            {
+                return ;
+            }
+            Console.WriteLine(str);
+        }
+
+        #endregion
+
+        Console.WriteLine("函数");
+        //使用函数 直接写函数名(参数)
+        SayHellow();
+        SayYourName("yjj");
+
+        SayYourName(WhatYourName());
+        Console.WriteLine(sum(4, 5));
+        float[] arr = Calc(4, 5);
+        Console.WriteLine(arr[0] + " " + arr[1]);
+        Speak("脏话");
+        Speak("111");
     }
-    }
+}
