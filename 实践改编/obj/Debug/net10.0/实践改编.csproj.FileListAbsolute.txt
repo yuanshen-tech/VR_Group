@@ -1,0 +1,15 @@
+D:\Visual Stdio\C#入门实践\实践改编\bin\Debug\net10.0\实践改编.exe
+D:\Visual Stdio\C#入门实践\实践改编\bin\Debug\net10.0\实践改编.deps.json
+D:\Visual Stdio\C#入门实践\实践改编\bin\Debug\net10.0\实践改编.runtimeconfig.json
+D:\Visual Stdio\C#入门实践\实践改编\bin\Debug\net10.0\实践改编.dll
+D:\Visual Stdio\C#入门实践\实践改编\bin\Debug\net10.0\实践改编.pdb
+D:\Visual Stdio\C#入门实践\实践改编\obj\Debug\net10.0\实践改编.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Stdio\C#入门实践\实践改编\obj\Debug\net10.0\实践改编.AssemblyInfoInputs.cache
+D:\Visual Stdio\C#入门实践\实践改编\obj\Debug\net10.0\实践改编.AssemblyInfo.cs
+D:\Visual Stdio\C#入门实践\实践改编\obj\Debug\net10.0\实践改编.csproj.CoreCompileInputs.cache
+D:\Visual Stdio\C#入门实践\实践改编\obj\Debug\net10.0\实践改编.dll
+D:\Visual Stdio\C#入门实践\实践改编\obj\Debug\net10.0\refint\实践改编.dll
+D:\Visual Stdio\C#入门实践\实践改编\obj\Debug\net10.0\实践改编.pdb
+D:\Visual Stdio\C#入门实践\实践改编\obj\Debug\net10.0\实践改编.genruntimeconfig.cache
+D:\Visual Stdio\C#入门实践\实践改编\obj\Debug\net10.0\ref\实践改编.dll
+D:\Visual Stdio\C#入门实践\实践改编\obj\Debug\net10.0\实践改编.csproj.Up2Date
