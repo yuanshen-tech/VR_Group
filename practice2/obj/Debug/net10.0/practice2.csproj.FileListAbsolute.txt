@@ -1,0 +1,15 @@
+D:\studying\opencv\opencvtrial\C#_trial1\debug\obj\Debug\net10.0\practice2.GeneratedMSBuildEditorConfig.editorconfig
+D:\studying\opencv\opencvtrial\C#_trial1\debug\obj\Debug\net10.0\practice2.AssemblyInfoInputs.cache
+D:\studying\opencv\opencvtrial\C#_trial1\debug\obj\Debug\net10.0\practice2.AssemblyInfo.cs
+D:\studying\opencv\opencvtrial\C#_trial1\debug\obj\Debug\net10.0\practice2.csproj.CoreCompileInputs.cache
+D:\studying\opencv\opencvtrial\C#_trial1\debug\bin\Debug\net10.0\practice2.exe
+D:\studying\opencv\opencvtrial\C#_trial1\debug\bin\Debug\net10.0\practice2.deps.json
+D:\studying\opencv\opencvtrial\C#_trial1\debug\bin\Debug\net10.0\practice2.runtimeconfig.json
+D:\studying\opencv\opencvtrial\C#_trial1\debug\bin\Debug\net10.0\practice2.dll
+D:\studying\opencv\opencvtrial\C#_trial1\debug\bin\Debug\net10.0\practice2.pdb
+D:\studying\opencv\opencvtrial\C#_trial1\debug\obj\Debug\net10.0\practice2.dll
+D:\studying\opencv\opencvtrial\C#_trial1\debug\obj\Debug\net10.0\refint\practice2.dll
+D:\studying\opencv\opencvtrial\C#_trial1\debug\obj\Debug\net10.0\practice2.pdb
+D:\studying\opencv\opencvtrial\C#_trial1\debug\obj\Debug\net10.0\practice2.genruntimeconfig.cache
+D:\studying\opencv\opencvtrial\C#_trial1\debug\obj\Debug\net10.0\ref\practice2.dll
+D:\studying\opencv\opencvtrial\C#_trial1\debug\obj\Debug\net10.0\practice2.csproj.Up2Date

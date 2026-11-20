@@ -1,0 +1,15 @@
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\bin\Debug\net10.0\random_number.exe
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\bin\Debug\net10.0\random_number.deps.json
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\bin\Debug\net10.0\random_number.runtimeconfig.json
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\bin\Debug\net10.0\random_number.dll
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\bin\Debug\net10.0\random_number.pdb
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\obj\Debug\net10.0\random_number.GeneratedMSBuildEditorConfig.editorconfig
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\obj\Debug\net10.0\random_number.AssemblyInfoInputs.cache
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\obj\Debug\net10.0\random_number.AssemblyInfo.cs
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\obj\Debug\net10.0\random_number.csproj.CoreCompileInputs.cache
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\obj\Debug\net10.0\random_number.dll
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\obj\Debug\net10.0\refint\random_number.dll
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\obj\Debug\net10.0\random_number.pdb
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\obj\Debug\net10.0\random_number.genruntimeconfig.cache
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\obj\Debug\net10.0\ref\random_number.dll
+D:\studying\opencv\opencvtrial\C#_trial1\random_number\obj\Debug\net10.0\random_n.90667DDF.Up2Date
