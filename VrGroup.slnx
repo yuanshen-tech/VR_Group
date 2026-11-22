@@ -9,5 +9,6 @@
     <Project Path="BookBorrowing1/BookBorrowing.Demo.csproj" Id="616bdbfa-4b92-462e-8b9a-c3ec53e828d2" />
     <Project Path="GenshinImpact.Team/GenshinImpact.Team.csproj" Id="badb0000-eb33-4c41-8f9a-dfc4131ea214" />
     <Project Path="Random/Test.1107.csproj" Id="b2bad8d3-99a9-476b-ab08-f4d64d1469af" />
+    <Project Path="Soul Land mobile game/SoulLandMobileGame.csproj" Id="9320b75c-163e-49bc-bd3d-40d2dd4f7e8b" />
   </Folder>
 </Solution>
